@@ -1,3 +1,5 @@
 .list-box {
-  height: 100vh;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  padding: 40px;
 }

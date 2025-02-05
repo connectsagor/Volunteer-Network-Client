@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../../logos/logo.png";
 import "./MyList.css";
 const MyList = () => {
   return (
@@ -6,11 +7,37 @@ const MyList = () => {
       <div className="row">
         <div className="col">
           <div className="list-box d-flex flex-column justify-content-center align-items-center">
-            <div className="list-item">
-              <img src="" alt="img" />
-              <div>Title</div>
-              <p>Date</p>
-              <button>Cancel</button>
+            <div className="list-item d-flex flex-row justify-content-center">
+              <img className="w-25" src={img} alt="img" />
+              <div>
+                <h3>Title Here</h3>
+                <p>Date</p>
+                <button>Cancel</button>
+              </div>
+            </div>
+            <div className="list-item d-flex flex-row justify-content-center">
+              <img className="w-25" src={img} alt="img" />
+              <div>
+                <h3>Title Here</h3>
+                <p>Date</p>
+                <button>Cancel</button>
+              </div>
+            </div>
+            <div className="list-item d-flex flex-row justify-content-center">
+              <img className="w-25" src={img} alt="img" />
+              <div>
+                <h3>Title Here</h3>
+                <p>Date</p>
+                <button>Cancel</button>
+              </div>
+            </div>
+            <div className="list-item d-flex flex-row justify-content-center">
+              <img className="w-25" src={img} alt="img" />
+              <div>
+                <h3>Title Here</h3>
+                <p>Date</p>
+                <button>Cancel</button>
+              </div>
             </div>
           </div>
         </div>

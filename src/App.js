@@ -7,6 +7,8 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import SignUp from "./components/SignUp/SignUp";
 import MyList from "./components/MyList/MyList";
+import AddEvent from "./components/AddEvent/AddEvent";
+import Volunteer from "./components/Volunteer/Volunteer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Login />
       <SignUp />
       <MyList />
+      <AddEvent></AddEvent>
+      <Volunteer></Volunteer>
     </div>
   );
 }
