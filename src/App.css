@@ -35,3 +35,12 @@ ul {
   background-color: #000;
   color: #61dafb;
 }
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+textarea:focus {
+  outline: none;
+}

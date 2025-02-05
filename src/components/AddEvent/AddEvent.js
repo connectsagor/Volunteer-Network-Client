@@ -1,4 +1,5 @@
 import React from "react";
+import "./AddEvent.css";
 
 const AddEvent = () => {
   return (
@@ -18,7 +19,11 @@ const AddEvent = () => {
                   <h6>Event Title</h6>
                   <input type="text" placeholder="Enter titile" />
                   <h6>Description</h6>
-                  <textarea name="description" id="description"></textarea>
+                  <textarea
+                    className=""
+                    name="description"
+                    id="description"
+                  ></textarea>
                 </div>
                 <div className="col-md-6">
                   <h6>Event Date</h6>

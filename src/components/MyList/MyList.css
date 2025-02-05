@@ -3,3 +3,8 @@
   grid-template-columns: repeat(2, 1fr) !important;
   padding: 40px;
 }
+.list-item {
+  box-shadow: 2px 3px 6px rgba(85, 85, 85, 0.195);
+  padding: 30px;
+  margin: 10px;
+}
