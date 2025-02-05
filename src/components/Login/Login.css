@@ -1,0 +1,9 @@
+.login {
+  height: 100vh;
+}
+
+.login-box {
+  border: 1px solid #4f4f4f;
+  border-radius: 3px;
+  padding: 60px 30px;
+}

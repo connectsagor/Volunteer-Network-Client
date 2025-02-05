@@ -100,9 +100,4 @@ export const images = [
     img: "stuffedAnimals.png",
     name: "Stuffed Animals",
   },
-  {
-    id: 21,
-    img: "voteRegister.png",
-    name: "Vote Register",
-  },
 ];

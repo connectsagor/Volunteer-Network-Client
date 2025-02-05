@@ -4,32 +4,32 @@ import logo from "../../../logos/logo.png";
 
 const Nav = () => {
   return (
-    <nav className="navbar bg-body-tertiary">
+    <nav className="navbar">
       <div className="container">
-        <a className="navbar-brand text-start">
+        <a href="#home" className="navbar-brand text-start">
           <img className="w-25" src={logo} alt="" />
         </a>
-        <ul ClassName="navbar-nav">
-          <li ClassName="nav-item">
-            <a ClassName="nav-link active" aria-current="page" href="#Home">
+        <ul className="navbar-nav d-flex flex-row gap-3">
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="#Home">
               Home
             </a>
           </li>
-          <li ClassName="nav-item">
-            <a ClassName="nav-link" href="#Donation">
+          <li className="nav-item">
+            <a className="nav-link" href="#Donation">
               Donation
             </a>
           </li>
-          <li ClassName="nav-item">
-            <a ClassName="nav-link" href="#">
+          <li className="nav-item">
+            <a className="nav-link" href="#events">
               Events
             </a>
           </li>
         </ul>
 
         <div>
-          <button>Register</button>
-          <button>Admin</button>
+          <button className="primary-btn py-2 px-4 ">Register</button>
+          <button className="primary-btn py-2 px-4 ms-3">Admin</button>
         </div>
       </div>
     </nav>

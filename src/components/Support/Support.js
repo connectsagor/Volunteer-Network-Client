@@ -9,12 +9,14 @@ const Support = () => {
     setSupportImage(images);
   }, []);
   return (
-    <div className="img-box container">
+    <div className="img-box container my-5">
       {supportImage &&
         supportImage.map((el) => (
           <div className="img-item" key={el.id}>
             <img className="" src={`/images/${el.img}`} alt={el.id} />
-            <h5 className="title-h5 py-2">{el.name}</h5>
+            <h5 className="title-h5 py-2 text-center text-uppercase">
+              {el.name}
+            </h5>
           </div>
         ))}
     </div>

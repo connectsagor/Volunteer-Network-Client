@@ -1,0 +1,17 @@
+.input-box {
+  position: relative;
+  display: inline-block;
+}
+
+.input-search {
+  border: 1px solid #61dafb;
+}
+.input-search:focus {
+  outline: none;
+}
+.input-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
