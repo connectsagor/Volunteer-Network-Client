@@ -1,0 +1,26 @@
+.img-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.img-item {
+  position: relative;
+}
+.img-box img {
+  width: 100%;
+}
+
+.title-h5 {
+  color: #555;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
