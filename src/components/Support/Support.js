@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Support.css";
-import { images } from "../../Data/Data";
 
 const Support = () => {
   const [supportImage, setSupportImage] = useState(null);
