@@ -1,29 +1,30 @@
 import React from "react";
 import "./Nav.css";
-import logo from "../../../logos/logo.png";
+import logo from "../../logos/logo.png";
+import { Link } from "react-router";
 
 const Nav = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <a href="#home" className="navbar-brand text-start">
+        <Link to="/" className="navbar-brand text-start">
           <img className="w-25" src={logo} alt="" />
-        </a>
+        </Link>
         <ul className="navbar-nav d-flex flex-row gap-3">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#Home">
+            <Link className="nav-link active" aria-current="page" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#Donation">
-              Donation
-            </a>
+            <Link to="/volunteer" className="nav-link">
+              Volunteer
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#events">
+            <Link className="nav-link" to="/add_event">
               Events
-            </a>
+            </Link>
           </li>
         </ul>
 

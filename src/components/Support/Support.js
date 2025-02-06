@@ -4,10 +4,26 @@ import { images } from "../../Data/Data";
 
 const Support = () => {
   const [supportImage, setSupportImage] = useState(null);
-
+  console.log(supportImage);
   useEffect(() => {
-    setSupportImage(images);
+    fetch("http://localhost:5000/addAllSupport")
+      .then((res) => res.json())
+      .then((result) => setSupportImage(result))
+      .catch((err) => console.log(err));
   }, []);
+
+  // const handleAdd = () => {
+  //   fetch("http://localhost:5000/postItems", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(images),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((result) => console.log(result))
+  //     .catch((error) => console.error("Error:", error));
+  // };
   return (
     <div className="img-box container my-5">
       {supportImage &&

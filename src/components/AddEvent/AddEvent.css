@@ -1,3 +1,6 @@
 .event-box-inside {
   box-shadow: 2px 3px 6px rgba(85, 85, 85, 0.195);
 }
+.left-col {
+  border-right: 1px solid #555;
+}
