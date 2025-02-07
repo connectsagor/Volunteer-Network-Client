@@ -3,7 +3,7 @@ import "./Support.css";
 
 const Support = () => {
   const [supportImage, setSupportImage] = useState(null);
-  console.log(supportImage);
+
   useEffect(() => {
     fetch("http://localhost:5000/addAllSupport")
       .then((res) => res.json())

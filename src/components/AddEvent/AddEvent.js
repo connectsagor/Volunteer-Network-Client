@@ -63,7 +63,10 @@ const AddEvent = () => {
               <PeopleFill />
               <span className="ms-2">Volunteer List</span>
             </Link>
-            <Link to="" className="d-flex align-items-center mt-3 text-black">
+            <Link
+              to="/add_event"
+              className="d-flex align-items-center mt-3 text-black"
+            >
               <Calendar4Event className="me-2" />
               Add Events
             </Link>
