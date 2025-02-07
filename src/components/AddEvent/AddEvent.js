@@ -5,6 +5,9 @@ import { Link } from "react-router-dom"; // Fixed import for React Router
 import { Calendar4Event, PeopleFill } from "react-bootstrap-icons";
 
 const AddEvent = () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  console.log(user);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
@@ -23,6 +26,8 @@ const AddEvent = () => {
     formData.append("description", description);
     formData.append("date", date);
     formData.append("banner", file);
+    formData.append("name", user.displayName);
+    formData.append("email", user.email);
 
     try {
       const response = await fetch("http://localhost:5000/addEvents", {

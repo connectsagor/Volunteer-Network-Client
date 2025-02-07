@@ -2,8 +2,13 @@ import React from "react";
 import "./Login.css";
 import logo from "../../logos/logo.png";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { Link, useLocation, useNavigate } from "react-router";
 
 const Login = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
+
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
   const handleLoginWithGoogle = () => {
@@ -18,6 +23,7 @@ const Login = () => {
 
         // Save user data to local storage (optional)
         localStorage.setItem("user", JSON.stringify(user));
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error("Login failed:", error.message);
@@ -36,7 +42,7 @@ const Login = () => {
           Login with Google
         </button>
         <p className="mt-2">
-          Don't have an account? <a href="">Create one</a>
+          Don't have an account? <Link to="/signup">Create one</Link>
         </p>
       </div>
     </div>

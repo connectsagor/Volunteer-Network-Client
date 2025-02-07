@@ -8,9 +8,10 @@ import MyList from "./components/MyList/MyList";
 import AddEvent from "./components/AddEvent/AddEvent";
 import Volunteer from "./components/Volunteer/Volunteer";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
-
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -35,7 +36,15 @@ function App() {
         <Route path="/login" element={<Login></Login>} />
         <Route path="/signup" element={<SignUp></SignUp>} />
         <Route path="/my_list" element={<MyList></MyList>} />
-        <Route path="/add_event" element={<AddEvent></AddEvent>} />
+        <Route
+          path="/add_event"
+          element={
+            <PrivateRoute>
+              {" "}
+              <AddEvent></AddEvent>
+            </PrivateRoute>
+          }
+        />
         <Route path="/volunteer" element={<Volunteer></Volunteer>} />
       </Routes>
     </Router>
